@@ -18,35 +18,58 @@
   <title>Frontend Mentor | Project tracking intro component</title>
 </head>
 
-<body class="font-Barlow ">
-  <header class="container mx-auto my-14 px-7">
-    <nav class="flex justify-between items-center">
+<body class="font-Barlow overflow-x-hidden">
+  <div class="absolute top-0 right-0 w-1/2 bg-LightGrayishBlue h-[50%] rounded-bl-[100px] z-10"></div>
+  <header class="container mx-auto my-14 px-6 relative z-20">
+    <nav class="flex justify-between items-center relative z-20">
       <div>
         <img src="assets/images/logo.svg" alt="Logo">
       </div>
       <div>
-        <ul class="md:flex md:flex-row hidden font-BarlowCondensed font-bold uppercase  text-VeryDarkBlue gap-11">
-          <li>Product</li>
-          <li>Features</li>
-          <li>Pricing</li>
-          <li class="text-GrayishBlue ml-12">Login</li>
+        <ul class="md:flex md:flex-row hidden font-BarlowCondensed font-bold uppercase text-VeryDarkBlue gap-11">
+          <li class="md:hover:underline"><a href="#">Product</a></li>
+          <li class="md:hover:underline"><a href="#">Features</a></li>
+          <li class="md:hover:underline"><a href="#">Pricing</a></li>
+          <li class="text-GrayishBlue ml-12 md:hover:underline"><a href="#">Login</a></li>
         </ul>
         <div class="flex md:hidden">
-          <img src="assets/images/icon-hamburger.svg" alt="">
+          <img src="assets/images/icon-hamburger.svg" alt="Hamburger Icon">
         </div>
       </div>
     </nav>
   </header>
+  <main class="flex md:flex-row flex-col container mx-auto md:mt-32 md:mb-5 my-16 justify-between items-center px-6 relative z-30">
+    <div class="md:order-1 order-2">
+      <div>
+        <span class="bg-VeryDarkBlue text-white font-bold px-2 py-1 rounded-full text-center mr-2">
+          New
+        </span>
+        <span class="uppercase font-BarlowCondensed text-GrayishBlue tracking-widest md:text-sm text-md">
+          Monograph Dashboard
+        </span>
+      </div>
+      <h1 class="text-VeryDarkBlue lg:text-6xl md:text-5xl text-4xl font-BarlowCondensed font-bold uppercase my-6">
+        Powerful insights <br>
+        into your team
+      </h1>
+      <p class="text-DarkGrayishBlue md:text-xl text-lg md:my-10 my-5">
+        Project planning and time tracking <br>
+        for agile teams
+      </p>
+      <div class="md:mt-10 mt-5">
+        <button class="font-BarlowCondensed font-bold tracking-wide uppercase md:text-lg text-md text-white bg-Red md:px-6 px-4 md:py-3 py-2 rounded-lg md:mr-5 mr-1 transition-all duration-300 hover:opacity-85">
+          Schedule a demo
+        </button>
+        <span class="uppercase font-BarlowCondensed text-GrayishBlue tracking-widest md:text-lg text-sm">
+          to see a preview
+        </span>
+      </div>
+    </div>
+    <div class="md:order-2 order-1 md:mb-0 mb-10  lg:mr-[-450px] md:mr-[-550px] mr-[-100px]">
+      <img src="assets/images/illustration-devices.svg" alt="Devices Illustration" class="max-w-full h-auto">
+    </div>
+  </main>
   
-
-  New
-  Monograph Dashboard
-
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
-
-  Schedule a demo
-  to see a live preview
   <!-- Custom JS -->
   <script src="assets/js/script.js"></script>
 </body>
