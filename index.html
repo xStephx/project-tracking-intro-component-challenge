@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Icon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,25 +22,26 @@
 
 <body class="font-Barlow overflow-x-hidden">
   <div class="absolute top-0 right-0 w-1/2 bg-LightGrayishBlue h-[50%] rounded-bl-[100px] z-10"></div>
-  <header class="container mx-auto my-14 px-6 relative z-20">
-    <nav class="flex justify-between items-center relative z-20">
-      <div>
+  <header class="container mx-auto my-14 px-6 relative z-30">
+    <nav class="flex justify-between items-center relative z-30">
+      <figure>
         <img src="assets/images/logo.svg" alt="Logo">
-      </div>
+      </figure>
       <div>
-        <ul class="md:flex md:flex-row hidden font-BarlowCondensed font-bold uppercase text-VeryDarkBlue gap-11">
-          <li class="md:hover:underline"><a href="#">Product</a></li>
-          <li class="md:hover:underline"><a href="#">Features</a></li>
-          <li class="md:hover:underline"><a href="#">Pricing</a></li>
-          <li class="text-GrayishBlue ml-12 md:hover:underline"><a href="#">Login</a></li>
+        <ul id="mobile-menu" class="hidden md:flex md:flex-row flex-col text-center font-BarlowCondensed font-bold uppercase text-VeryDarkBlue gap-11 md:relative absolute inset-x-0 top-14 md:top-auto bg-white md:bg-transparent px-12 py-7 md:px-0 md:py-0">
+          <li class="md:hover:underline md:mb-0 mb-5 md:px-0 px-14"><a href="#">Product</a></li>
+          <li class="md:hover:underline md:mb-0 mb-5"><a href="#">Features</a></li>
+          <li class="md:hover:underline md:mb-0 mb-5"><a href="#">Pricing</a></li>
+          <hr class="md:hidden my-2">
+          <li class="text-GrayishBlue md:ml-12 md:hover:underline md:mb-0 mb-5"><a href="#">Login</a></li>
         </ul>
-        <div class="flex md:hidden">
-          <img src="assets/images/icon-hamburger.svg" alt="Hamburger Icon">
+        <div id="hamburger" class="md:hidden">
+          <img src="assets/images/icon-hamburger.svg" alt="Hamburger Icon" id="hamburger-icon">
         </div>
       </div>
     </nav>
   </header>
-  <main class="flex md:flex-row flex-col container mx-auto md:mt-32 md:mb-5 my-16 justify-between items-center px-6 relative z-30">
+  <main class="flex md:flex-row flex-col container mx-auto md:mt-32 md:mb-5 my-16 justify-between items-center px-6 relative z-20">
     <div class="md:order-1 order-2">
       <div>
         <span class="bg-VeryDarkBlue text-white font-bold px-2 py-1 rounded-full text-center mr-2">
@@ -65,11 +68,10 @@
         </span>
       </div>
     </div>
-    <div class="md:order-2 order-1 md:mb-0 mb-10  lg:mr-[-450px] md:mr-[-550px] mr-[-100px]">
+    <div class="md:order-2 order-1 md:mb-0 mb-10  lg:mr-[-450px] md:mr-[-550px] mr-[-150px]">
       <img src="assets/images/illustration-devices.svg" alt="Devices Illustration" class="max-w-full h-auto">
     </div>
   </main>
-  
   <!-- Custom JS -->
   <script src="assets/js/script.js"></script>
 </body>
