@@ -19,6 +19,7 @@ This is a solution to the [Project tracking intro component challenge on Fronten
 
 - HTML5 
 - Google Fonts
+- Animate.css
 - Tailwind CSS
 - JavaScript
 - Git
